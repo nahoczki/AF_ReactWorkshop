@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+:root {
+    --blackWeight: 900;
+    --extraBoldWeight: 800;
+    --boldWeight: 700;
+    --semiBoldWeight: 600;
+    --mediumWeight: 500;
+    --regularWeight: 400;
+    --lightWeight: 300;
+    --extraLightWeight: 200;
+    --thinWeight: 100;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+    height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.top-bar {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 10px 20% 10px 20%;
+    background-color: white;
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+    font-size: 23px;
+    font-weight: var(--mediumWeight);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h4 {
+    font-size: 15px;
+    font-weight: var(--regularWeight);
+    letter-spacing: 2px;
+    color: gray;
+    padding: 0;
+    margin: 5px 0;
+    width: 25%;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+.pinata-item {
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px lightgray solid;
+    font-size: 20px;
+    padding: 10px;
+    margin: 2px 0;
+    width: 25%;
+}
+
+.pinata-container {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
